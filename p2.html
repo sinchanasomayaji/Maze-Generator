@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+    <head>
+        <link rel="stylesheet" href="./maze.css">
+        <meta charset="UTF-8">
+        <title>Maze Generator</title>
+        <script src="./jquery-3.4.1.min.js" ></script>
+        <script src="maze.js"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    </head>
+    <body>
+        <div class="branch"> 
+        </div>
+        <div class="slidecontainer">
+            <p>Width <input type="range" min="1" max="18" value="9" oninput="document.getElementById('Xval').innerHTML=this.value" class="slider" id="myRange1">
+            <label id="Xval"></label></p>
+            <p>Height <input type="range" min="1" max="18" value="9"  oninput="document.getElementById('Yval').innerHTML=this.value" class="slider" id="myRange2">
+            <label id="Yval"></label></p>
+        </div>
+        <button class="">Reset</button>
+        <form action="https://www.google.com">
+            <button type="button" class="btn btn-primary">Pofile</button>
+            <button onclick="this.form.target='www.youtube.com';">My Repo</button>
+        </form>
+        <div>
+            <h1>Maze Generator</h1>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </body>
+</html>

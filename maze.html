@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Maze Generator</title>
+    <script src="./jquery-3.4.1.min.js"></script>
+    <script src="./maze.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./maze.css">
+</head>
+
+<body class="container-fluid row margin-padding-0">
+    <header class="w-100">
+        <label for="">
+            <h2>Maze Generator</h2>
+        </label>
+    </header>
+    <br />
+    <div class="w-100 margin-padding-0 container-fluid row ">
+        <div id="form-and-link" class="margin-padding-0 col-6 bg-primary container-fluid row">
+            <form action="">
+                <div class="container-fluid row">
+                    <div id="hor-char-count">
+                        <br /> Horizontal Char. Count:
+                        <span class="col-10">
+                            <!-- // TODO: Add the slider -->
+                        </span>
+                        <span class="col-2">
+                            <!-- // TODO: Add the Textboc -->
+                        </span>
+                    </div>
+                    <div id="vert-char-count">
+                        <br /> Vertical Char. Count:
+                        <span class="col-10">
+                            <!-- // TODO: Add the slider -->
+                        </span>
+                        <span class="col-2">
+                            <!-- // TODO: Add the Textboc -->
+                        </span>
+                    </div>
+                </div>
+                <button>Submit & Reset</button><br /><br />
+                <button>Sin GitHub</button>
+                <button>Maze Repo</button>
+            </form>
+        </div>
+        <div class="margin-padding-0 col-6 bg-secondary">
+            <div id="maze" class="d-inline-block"></div>
+        </div>
+    </div>
+    <br />
+    <footer class="w-100 fixed-bottom">
+        This is a maze Generator ............
+    </footer>
+</body>
+
+</html>
