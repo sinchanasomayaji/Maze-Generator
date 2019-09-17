@@ -1,7 +1,3 @@
-/* body {
-    background-color: rgb(226, 213, 195);
-} */
-
 #maze {
     font-size: 27px;
     font-family: none;
@@ -22,6 +18,8 @@
     margin: 0rem;
     padding:0rem;
 }
+
+
 /*
 .slidecontainer {
     position: absolute;

@@ -4,54 +4,60 @@
 <head>
     <meta charset="UTF-8">
     <title>Maze Generator</title>
-    <script src="./jquery-3.4.1.min.js"></script>
-    <script src="./maze.js"></script>
+    <script src="./Assets/js/jquery-3.4.1.min.js"></script>
+    <script src="./Assets/js/maze.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="./maze.css">
+    <link rel="stylesheet" href="./Assets/css/maze.css">
 </head>
 
-<body class="container-fluid row margin-padding-0">
-    <header class="w-100">
+<body class="container-fluid row margin-padding-0 row vh-100">
+    <header class="align-self-start w-100 row justify-content-center margin-padding-0">
         <label for="">
             <h2>Maze Generator</h2>
         </label>
     </header>
-    <br />
-    <div class="w-100 margin-padding-0 container-fluid row ">
-        <div id="form-and-link" class="margin-padding-0 col-6 bg-primary container-fluid row">
-            <form action="">
-                <div class="container-fluid row">
-                    <div id="hor-char-count">
-                        <br /> Horizontal Char. Count:
-                        <span class="col-10">
-                            <!-- // TODO: Add the slider -->
-                        </span>
-                        <span class="col-2">
-                            <!-- // TODO: Add the Textboc -->
-                        </span>
+    <div class="align-self-center w-100 margin-padding-0 row">
+        <div id="form-and-link"
+            class="margin-padding-0 col-6 container-fluid row justify-content-center align-self-center">
+            <div clas="container-fluid row">
+                <form action="" class="container-fluid row d-block align-items-center">
+                    <div class="container row align-self-center">
+                        <div class="col align-self-center">
+                            <div id="hor-char-count">
+                                Horizontal Char. Count:
+                                <span class="col-10">
+                                    <input class="custom-range" id="h0" type="range" min="1" max="20" value="10"
+                                        link-to="h1" />
+                                    <div class="md-form">
+                                        <input type="number" min="1" max="20" id="h1" class="form-control">
+                                    </div>
+                                </span>
+                                </span>
+                                <br /> Vertical Char. Count:
+                                <span class="col-10">
+                                    <input class="custom-range" id="v0" type="range" min="1" max="20" value="10"
+                                        link-to="v1" />
+                                    <div class="md-form">
+                                        <input type="number" min="1" max="20" id="v1" class="form-control">
+                                    </div>
+                                </span>
+                                </span>
+                            </div>
+                            <button class="btn btn-primary btn-lg" id="reset" type="submit">Make Maze</button><br />
+                            <br /><button type="button" class="btn btn-outline-secondary">My GitHub</button>
+                            <button type="button" class="btn btn-outline-secondary">Maze Repo</button>
+                        </div>
                     </div>
-                    <div id="vert-char-count">
-                        <br /> Vertical Char. Count:
-                        <span class="col-10">
-                            <!-- // TODO: Add the slider -->
-                        </span>
-                        <span class="col-2">
-                            <!-- // TODO: Add the Textboc -->
-                        </span>
-                    </div>
-                </div>
-                <button>Submit & Reset</button><br /><br />
-                <button>Sin GitHub</button>
-                <button>Maze Repo</button>
-            </form>
+                </form>
+            </div>
         </div>
-        <div class="margin-padding-0 col-6 bg-secondary">
-            <div id="maze" class="d-inline-block"></div>
+        <div class="col-6 margin-padding-0 justify-content-center align-self-center container row bg-sucess">
+            <div id="maze"></div>
         </div>
+
     </div>
-    <br />
-    <footer class="w-100 fixed-bottom">
+    <footer class="w-100 col align-self-end bg-dark row justify-content-center margin-padding-0">
         This is a maze Generator ............
     </footer>
 </body>
