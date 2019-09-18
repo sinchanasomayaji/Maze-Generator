@@ -12,6 +12,12 @@ $("#v0").on("change", function () {
 $("#h0").on("change", function () {
     $("#h1")[0].value = $("#h0")[0].value.toString();
 })
+$("#v1").on("change", function () {
+    $("#v0")[0].value = $("#v1")[0].value.toString();
+})
+$("#h1").on("change", function () {
+    $("#h0")[0].value = $("#h1")[0].value.toString();
+})
 
     draw($("#h1")[0].value,$("#v1")[0].value);
     function draw(numX,numY) {
