@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Maze Generator</title>
-    <script src="./Assets/js/jquery-3.4.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
     <script src="./Assets/js/maze.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -13,9 +13,7 @@
 
 <body class="container-fluid row margin-padding-0 row vh-100">
     <header class="align-self-start w-100 row justify-content-center margin-padding-0 ">
-        <label for="">
-            <h2>Maze Generator</h2>
-        </label>
+        <h2>Maze Generator</h2>
     </header>
     <div class="align-self-center w-100 margin-padding-0 row">
         <div id="form-and-link"
@@ -45,8 +43,12 @@
                                 </span>
                             </div>
                             <button class="btn btn-primary btn-lg" id="reset" type="submit">Make Maze</button><br />
-                            <br /><button type="button" class="btn btn-outline-secondary" onclick="window.location.href = 'https://github.com/sinchanasomayaji';">My GitHub</button>
-                            <button type="button" class="btn btn-outline-secondary" onclick="window.location.href = 'https://github.com/sinchanasomayaji/Maze-Generator.git';">Maze Repo</button>
+                            <br /><button type="button" class="btn btn-outline-secondary"
+                                onclick="window.location.href = 'https://github.com/sinchanasomayaji';">My
+                                GitHub</button>
+                            <button type="button" class="btn btn-outline-secondary"
+                                onclick="window.location.href = 'https://github.com/sinchanasomayaji/Maze-Generator.git';">Maze
+                                Repo</button>
                         </div>
                     </div>
                 </form>
@@ -57,7 +59,7 @@
         </div>
 
     </div>
-    <footer class="w-100 col align-self-end row justify-content-center margin-padding-0 pt-5" id="end">
+    <footer class="w-100 col align-self-end row justify-content-center margin-padding-0 pt-4" id="end">
         <h4>This is a maze Generator ............</h4>
     </footer>
 </body>
